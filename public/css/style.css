@@ -12,11 +12,9 @@ div{
     position:relative;
     left:0;
     top:0;  
-   /* border:1px solid black;*/
     height:700px;
     width:100%;
-   margin-bottom:10px;
-   
+    margin-bottom:10px;
 }
 nav{
     background-color:white;
@@ -26,28 +24,22 @@ nav{
     left:0;
     z-index:10;
     box-shadow: 0px  3px 3px rgb(117, 112, 112);
-    
 }
 ul{
-   
     display:grid;
     grid-template-rows:60px;
     grid-template-columns: auto  100px 100px 100px;
-    /*border:1px solid red;*/
     width:100%;
     height:100%;
     align-items:center;
- 
 }
 li{
-    
     list-style:none;
     margin:20px;
 }
 a{
     text-decoration:none;
     color:black;
-    /*margin:15px;*/
     font-size:16px;
     letter-spacing:4px;
 }
@@ -58,12 +50,11 @@ a:hover{
 }
 #right,#right1,#right2{
     float:right;
-    /*margin-left:970px;*/
 }
 
 /******home section background image******/
 #home{
-    background:url("/images/img3.jpg") no-repeat center center/cover;
+    background:url("../images/img3.jpg") no-repeat center center/cover;
     opacity:0.8;
     margin-bottom:100px;
 }
@@ -74,7 +65,6 @@ a:hover{
     margin-top:550px;
     margin-left:100px;
     font-size:80px;
-    font-weight:0px;
     font-family: "Playfair Display";
     opacity:1;
     text-shadow:2px 2px white;
@@ -101,22 +91,21 @@ img{
     flex-direction:column;
     font-size:20px;
     font-family: "Playfair Display";
-   margin-top:25px;
-   
+    margin-top:25px;
 }
 #about-section-heading{
-font-size:60px;
-margin-bottom:30px;
-text-align:center;
-letter-spacing:5px;
-font-family: "Playfair Display"
+    font-size:60px;
+    margin-bottom:30px;
+    text-align:center;
+    letter-spacing:5px;
+    font-family: "Playfair Display"
 }
 #about-section-des{
- font-size:20px; 
- margin-bottom:20px;
- text-align:center;
- letter-spacing:5px;
- font-family: "Playfair Display"
+    font-size:20px; 
+    margin-bottom:20px;
+    text-align:center;
+    letter-spacing:5px;
+    font-family: "Playfair Display"
 }
 /*****menu section****/
 #menu{
@@ -132,22 +121,19 @@ font-family: "Playfair Display"
     height:15px;
     align-items:center;
     justify-content:center;
-    
 }
 .menu-items{
     margin:20px;
-    
-    
 }
 #menu-main-heading{
     text-align:center;
     letter-spacing:5px;
-margin:10px;
-font-size:60px;
+    margin:10px;
+    font-size:60px;
 }
 .menu-headings{
-padding-bottom:10px;
-letter-spacing:5px;
+    padding-bottom:10px;
+    letter-spacing:5px;
 }
 .menu-des{
     color:rgb(82, 76, 76);
@@ -157,13 +143,13 @@ letter-spacing:5px;
     width:80%;
     margin:auto;
     margin-top:60px;
-   padding:40px;
+    padding:40px;
 }
 #contact-main-heading{
-margin:10px  0px 60px 10px;
-letter-spacing:5px;
-text-align:left;
-font-size:60px;
+    margin:10px  0px 60px 10px;
+    letter-spacing:5px;
+    text-align:left;
+    font-size:60px;
 }
 #contact-sub-heading{
     margin:10px;
@@ -188,7 +174,6 @@ input{
 }
 input[type="button"]{
     width:15%;
-   
     letter-spacing:2px;
 }
 /***Footer***/
