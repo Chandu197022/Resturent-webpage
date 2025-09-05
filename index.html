@@ -1,98 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Le Catering</title>
-  <!-- Correct CSS path -->
-  <link rel="stylesheet" href="public/css/style.css">
-  <!-- Fixed favicon path -->
-  <link rel="shortcut icon" type="image/jpg" href="public/images/img1.jpg">
+  <title>Le Catering - Restaurant</title>
+  <link rel="stylesheet" href="public/style.css">
+  <link rel="icon" href="public/images/img1.jpg" type="image/jpg">
 </head>
-
 <body>
-  <!------- Navbar ------->
-  <nav>
-    <ul>
-      <li><a href="#home" id="left">Gourmet au Catering</a></li>
-      <li><a href="#about" id="right">About</a></li>
-      <li><a href="#menu" id="right1">Menu</a></li>
-      <li><a href="#contact" id="right2">Contact</a></li>
-    </ul>
-  </nav>
 
-  <!------- Home Section ------->
-  <div id="home">
-    <h1 id="home-content">Le Catering</h1>
-  </div>
+  <!-- ================== NAVBAR ================== -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li id="right"><a href="#about">ABOUT</a></li>
+        <li id="right1"><a href="#menu">MENU</a></li>
+        <li id="right2"><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!------- About Section ------->
-  <div id="about">
-    <img src="public/images/about.png" alt="About">
-    <div id="about-section">
+  <!-- ================== HOME SECTION ================== -->
+  <section id="home">
+    <div class="hero">
+      <h1 id="home-content">Le Catering</h1>
+      <p class="hero-sub">Delicious food, since 1889</p>
+      <img src="public/images/homepage.png" alt="Homepage Food" class="hero-img">
+    </div>
+  </section>
+
+  <!-- ================== ABOUT SECTION ================== -->
+  <section id="about">
+    <div class="about-left">
+      <img src="public/images/about.png" alt="About Catering">
+    </div>
+    <div class="about-right">
       <h1 id="about-section-heading">About Catering</h1>
-      <p id="about-section-des">Tradition since 1889</p>
+      <h3 id="about-section-des">Tradition since 1889</h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+        The Catering was founded by Mr. Smith in lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Our mission is to serve food that not
+        only tastes amazing but also looks perfect on the plate.
+      </p>
+      <p>
+        We only use seasonal ingredients and work with local farmers. 
+        Every dish tells a story of our tradition and passion for hospitality.
       </p>
     </div>
-  </div>
+  </section>
 
-  <!------- Menu Section ------->
-  <div id="menu">
+  <!-- ================== MENU SECTION ================== -->
+  <section id="menu">
     <div id="menu-content">
       <h1 id="menu-main-heading">Our Menu</h1>
 
+      <!-- Menu Item 1 -->
       <div class="menu-items">
-        <h3 class="menu-headings">Bread Basket</h3>
-        <p class="menu-des">Assortment of fresh baked fruit breads and muffins 5.50</p>
-      </div>
-
-      <div class="menu-items">
-        <h3 class="menu-headings">Honey Almond Granola with Fruits</h3>
-        <p class="menu-des">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
-      </div>
-
-      <div class="menu-items">
+        <img src="public/images/menu.png" alt="Menu Icon" class="menu-img">
         <h3 class="menu-headings">Belgian Waffle</h3>
-        <p class="menu-des">Vanilla flavored batter with malted flour 7.50</p>
+        <p class="menu-des">Vanilla flavored batter with malted flour <strong>$7.50</strong></p>
       </div>
 
+      <!-- Menu Item 2 -->
       <div class="menu-items">
+        <img src="public/images/img2.jpg" alt="Scrambled Eggs" class="menu-img">
         <h3 class="menu-headings">Scrambled Eggs</h3>
-        <p class="menu-des">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+        <p class="menu-des">Scrambled eggs, roasted red pepper, garlic, and green onions <strong>$7.50</strong></p>
       </div>
 
+      <!-- Menu Item 3 -->
       <div class="menu-items">
         <h3 class="menu-headings">Blueberry Pancakes</h3>
-        <p class="menu-des">With syrup, butter and lots of berries 8.50</p>
+        <p class="menu-des">With syrup, butter and lots of fresh berries <strong>$8.50</strong></p>
+      </div>
+
+      <!-- Menu Item 4 -->
+      <div class="menu-items">
+        <h3 class="menu-headings">French Croissant</h3>
+        <p class="menu-des">Flaky croissant with butter and jam <strong>$6.50</strong></p>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!------- Contact Section ------->
-  <div id="contact">
-    <h1 id="contact-main-heading">Contact</h1>
+  <!-- ================== CONTACT SECTION ================== -->
+  <section id="contact">
+    <h1 id="contact-main-heading">Contact Us</h1>
+    <img src="public/images/contact.png" alt="Contact" class="contact-img">
+
     <h3 id="contact-sub-heading">We offer full-service catering for any event</h3>
     <p class="contact-content">
-      We understand your needs and we will cater the food to satisfy the biggest criteria of them all, both look and
-      taste.
+      We understand your needs and we will cater the food to satisfy the biggest
+      criteria of them all — both look and taste. Reach out to us anytime!
     </p>
 
+    <!-- Contact Form -->
     <form>
-      <input type="text" placeholder="Name">
-      <input type="number" placeholder="How many people">
-      <input type="datetime-local">
-      <input type="text" placeholder="Message / Special requirements">
-      <input type="button" value="SEND MESSAGE">
+      <input type="text" placeholder="Your Name" required>
+      <input type="number" placeholder="How many people?" required>
+      <input type="datetime-local" required>
+      <input type="text" placeholder="Message / Special Requirements" required>
+      <input type="submit" value="SEND MESSAGE">
     </form>
-  </div>
+  </section>
 
-  <!------- Footer ------->
-  <div id="footer">
-    <p id="footer-content">Powered by Gourmet au Catering</p>
-  </div>
+  <!-- ================== FOOTER ================== -->
+  <footer id="footer">
+    <p id="footer-content">All Rights Reserved © 2025 | Le Catering</p>
+  </footer>
+
 </body>
 </html>
